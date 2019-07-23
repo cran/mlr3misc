@@ -1,6 +1,6 @@
 Package: mlr3misc
 Title: Helper Functions for 'mlr3'
-Version: 0.1.0
+Version: 0.1.1
 Authors@R: 
     person(given = "Michel",
            family = "Lang",
@@ -17,12 +17,12 @@ URL: https://mlr3misc.mlr-org.com
 BugReports: https://github.com/mlr-org/mlr3misc/issues
 Depends: R (>= 3.1.0)
 Imports: backports, checkmate, data.table, R6
-Suggests: testthat
+Suggests: callr, evaluate, testthat
 Encoding: UTF-8
 NeedsCompilation: no
 RoxygenNote: 6.1.1
-Packaged: 2019-07-09 16:39:53 UTC; michel
+Packaged: 2019-07-23 14:26:03 UTC; lang
 Author: Michel Lang [cre, aut] (<https://orcid.org/0000-0001-9754-0393>)
 Maintainer: Michel Lang <michellang@gmail.com>
 Repository: CRAN
-Date/Publication: 2019-07-10 12:20:44 UTC
+Date/Publication: 2019-07-23 15:12:05 UTC

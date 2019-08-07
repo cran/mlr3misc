@@ -1,6 +1,6 @@
 Package: mlr3misc
 Title: Helper Functions for 'mlr3'
-Version: 0.1.1
+Version: 0.1.2
 Authors@R: 
     person(given = "Michel",
            family = "Lang",
@@ -19,10 +19,10 @@ Depends: R (>= 3.1.0)
 Imports: backports, checkmate, data.table, R6
 Suggests: callr, evaluate, testthat
 Encoding: UTF-8
-NeedsCompilation: no
+NeedsCompilation: yes
 RoxygenNote: 6.1.1
-Packaged: 2019-07-23 14:26:03 UTC; lang
+Packaged: 2019-08-07 21:05:27 UTC; michel
 Author: Michel Lang [cre, aut] (<https://orcid.org/0000-0001-9754-0393>)
 Maintainer: Michel Lang <michellang@gmail.com>
 Repository: CRAN
-Date/Publication: 2019-07-23 15:12:05 UTC
+Date/Publication: 2019-08-07 21:30:03 UTC

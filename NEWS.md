@@ -1,5 +1,12 @@
 # mlr3misc
 
+# v0.1.3
+
+* New function `detect()`.
+* New function `dictionary_sugar()`.
+* It is now asserted that the return value of `Dictionary$get()` is an R6 object.
+* Fix some assertions in `Dictionary`
+
 ## v0.1.2
 
 * New function `named_vector()`.

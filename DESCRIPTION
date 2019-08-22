@@ -1,6 +1,6 @@
 Package: mlr3misc
 Title: Helper Functions for 'mlr3'
-Version: 0.1.2
+Version: 0.1.3
 Authors@R: 
     person(given = "Michel",
            family = "Lang",
@@ -13,16 +13,16 @@ Description: Frequently used helper functions and assertions
     as well as some generally useful 'R6' classes. This package also
     supersedes the package 'BBmisc'.
 License: LGPL-3
-URL: https://mlr3misc.mlr-org.com
+URL: https://mlr3misc.mlr-org.com, https://github.com/mlr-org/mlr3misc
 BugReports: https://github.com/mlr-org/mlr3misc/issues
 Depends: R (>= 3.1.0)
 Imports: backports, checkmate, data.table, R6
-Suggests: callr, evaluate, testthat
+Suggests: callr, evaluate, paradox, testthat
 Encoding: UTF-8
 NeedsCompilation: yes
 RoxygenNote: 6.1.1
-Packaged: 2019-08-07 21:05:27 UTC; michel
+Packaged: 2019-08-22 20:24:16 UTC; michel
 Author: Michel Lang [cre, aut] (<https://orcid.org/0000-0001-9754-0393>)
 Maintainer: Michel Lang <michellang@gmail.com>
 Repository: CRAN
-Date/Publication: 2019-08-07 21:30:03 UTC
+Date/Publication: 2019-08-22 20:50:02 UTC

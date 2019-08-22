@@ -27,9 +27,10 @@ test_that("Dictionary", {
 })
 
 test_that("Dictionary required args", {
+  foo = R6Class("Foo", public = list(x = 0))
   x = Dictionary$new()
-  x$add("a", 1)
-  x$add("b", 2, required_args = "c")
+  x$add("a", foo)
+  x$add("b", foo, required_args = "c")
 
   expect_equal(x$required_args("a"), character())
   expect_equal(x$required_args("b"), "c")
@@ -37,10 +38,32 @@ test_that("Dictionary required args", {
 })
 
 test_that("Dictionary throws exception on unnamed args", {
+  foo = R6Class("Foo", public = list(x = 0))
   x = Dictionary$new()
-  x$add("a", 1)
-  x$add("b", 1)
+  x$add("a", foo)
+  x$add("b", foo)
 
   expect_error(x$get("a", 1), "names")
   expect_error(x$mget("a", "b"), "names")
+})
+
+test_that("dictionary_sugar", {
+  Foo = R6::R6Class("Foo", public = list(x = 0, y = 0, key = 0, initialize = function(y, key = -1) { self$y = y ; self$key = key }), cloneable = TRUE)
+  d = Dictionary$new()
+  d$add("f1", Foo)
+  x = dictionary_sugar(d, "f1", y = 99, x = 1)
+  expect_equal(x$x, 1)
+  expect_equal(x$y, 99)
+  expect_equal(x$key, -1)
+  x2 = dictionary_sugar(d, "f1", 99, x = 1)
+  expect_equal(x, x2)
+  x2 = dictionary_sugar(d, "f1", x = 1, 99)
+  expect_equal(x, x2)
+
+  x = dictionary_sugar(d, "f1", 1, 99)
+  expect_equal(x$x, 0)
+  expect_equal(x$y, 1)
+  expect_equal(x$key, 99)
+  x2 = dictionary_sugar(d, "f1", key = 99, y = 1)
+  expect_equal(x, x2)
 })

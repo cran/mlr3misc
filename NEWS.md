@@ -1,3 +1,12 @@
+# mlr3misc 0.1.5
+
+* Fixed error in C code discovered by UBSAN checks on CRAN.
+* Added `dictionary_sugar_mget()`.
+* Renamed `dictionary_sugar()` to `dictionary_sugar_get()`.
+* Added function `cite_bib()` and Rd macro `\cite{}` to insert entries from
+  bibtex files into roxygen documentation.
+* `unnest()` now creates list columns for non atomic list elements.
+
 # mlr3misc 0.1.4
 
 * Added argument `na_rm` to `which_max()` and `which_min()`.

@@ -1,6 +1,6 @@
 Package: mlr3misc
 Title: Helper Functions for 'mlr3'
-Version: 0.1.5
+Version: 0.1.6
 Authors@R: 
     person(given = "Michel",
            family = "Lang",
@@ -20,9 +20,9 @@ Imports: backports (>= 0.1.5), checkmate, data.table, R6
 Suggests: bibtex, callr, evaluate, paradox, testthat
 Encoding: UTF-8
 NeedsCompilation: yes
-RoxygenNote: 6.1.1
-Packaged: 2019-09-27 21:24:40 UTC; michel
+RoxygenNote: 7.0.2
+Packaged: 2019-12-12 10:40:03 UTC; michel
 Author: Michel Lang [cre, aut] (<https://orcid.org/0000-0001-9754-0393>)
 Maintainer: Michel Lang <michellang@gmail.com>
 Repository: CRAN
-Date/Publication: 2019-09-28 04:40:02 UTC
+Date/Publication: 2019-12-12 11:10:02 UTC

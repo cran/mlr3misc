@@ -11,13 +11,15 @@ cite_bib(package, key)
 Package to read the bibtex file from.}
 
 \item{key}{(\code{character(1)})\cr
-Entry of the bibtex file.}
+Entry of the bibtex file.
+If the key is \code{"pkg::citation"}, the \code{\link[=citation]{citation()}} information of the
+package is used instead.}
 }
 \value{
 (\code{character(1)}) Bibentry formated as Rd.
 }
 \description{
-This function is called by the provided Rd macro \code{\\cite{pkg}{key}}:
+This function is called by the provided Rd macro \verb{\\\\cite\{pkg\}\{key\}}:
 \itemize{
 \item Parses the bibtex file \code{references.bib} in the root directory of package \code{package} using \code{\link[bibtex:read.bib]{bibtex::read.bib()}}.
 \item Extracts the entry with key \code{key}.
@@ -27,8 +29,11 @@ This function is called by the provided Rd macro \code{\\cite{pkg}{key}}:
 \examples{
 # examplary bibtex file
 path = system.file("references.bib", package = "mlr3misc")
-cat(readLines(path), sep = "\\n")
+cat(readLines(path), sep = "\n")
 
-# return value: raw rd
+# bibtex entry as raw Rd
 cite_bib("mlr3misc", "mlr")
+
+# citation info as raw Rd
+cite_bib("stats", "pkg::citation")
 }

@@ -33,12 +33,13 @@ Given a \link{Dictionary}, retrieve objects with provided keys.
 \item \code{dictionary_sugar_get()} to retrieve a single object with key \code{.key}.
 \item \code{dictionary_sugar_mget()} to retrieve a list of objects with keys \code{.keys}.
 \item \code{dictionary_sugar()} is deprecated in favor of \code{dictionary_sugar_get()}.
+\item If \code{.key} or \code{.keys} is missing, the dictionary itself is returned.
 }
 
 Arguments in \code{...} must be named and are consumed in the following order:
 \enumerate{
 \item All arguments whose names match the name of an argument of the constructor
-are passed to the \code{$get()} method of the \link{Dictionary} for construction.
+are passed to the \verb{$get()} method of the \link{Dictionary} for construction.
 \item All arguments whose names match the name of a parameter of the \link[paradox:ParamSet]{paradox::ParamSet} of the
 constructed object are set as parameters. If there is no \link[paradox:ParamSet]{paradox::ParamSet} in \code{obj$param_set}, this
 step is skipped.

@@ -4,8 +4,7 @@
 \alias{str_indent}
 \title{Indent Strings}
 \usage{
-str_indent(initial, str, width = 0.9 * getOption("width"), exdent = 2L,
-  ...)
+str_indent(initial, str, width = 0.9 * getOption("width"), exdent = 2L, ...)
 }
 \arguments{
 \item{initial}{:: \code{character(1)}\cr
@@ -30,5 +29,5 @@ Additional parameters passed to \code{\link[=str_collapse]{str_collapse()}}.}
 Formats a text block for printing.
 }
 \examples{
-cat(str_indent("Letters:", str_collapse(letters), width = 25), sep = "\\n")
+cat(str_indent("Letters:", str_collapse(letters), width = 25), sep = "\n")
 }

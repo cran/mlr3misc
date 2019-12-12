@@ -100,7 +100,7 @@ Additional arguments passed down to \code{.f} or \code{.p}.}
 \item{.fill}{:: \code{logical(1)}\cr
 Passed down to \code{\link[data.table:rbindlist]{data.table::rbindlist()}}.}
 
-\item{.p}{:: (\code{function()} | \code{logical()})\cr
+\item{.p}{:: (\verb{function()} | \code{logical()})\cr
 Predicate function.}
 
 \item{.at}{:: (\code{character()} | \code{integer()} | \code{logical()})\cr
@@ -125,11 +125,11 @@ If \code{.x} does not have names, a sequence along \code{.x} is passed as second
 
 Additionally, the functions \code{map()}, \code{imap()} and \code{pmap} have type-safe variants with the following suffixes:
 \itemize{
-\item \code{*_lgl()} returns a \code{logical(length(.x))}.
-\item \code{*_int()} returns a \code{integer(length(.x))}.
-\item \code{*_dbl()} returns a \code{double(length(.x))}.
-\item \code{*_chr()} returns a \code{character(length(.x))}.
-\item \code{*_dtr()} returns a \code{\link[data.table:data.table]{data.table::data.table()}} where the results of \code{.f} are put together in an \code{\link[base:rbind]{base::rbind()}} fashion.
-\item \code{*_dtc()} returns a \code{\link[data.table:data.table]{data.table::data.table()}} where the results of \code{.f} are put together in an \code{\link[base:cbind]{base::cbind()}} fashion.
+\item \verb{*_lgl()} returns a \code{logical(length(.x))}.
+\item \verb{*_int()} returns a \code{integer(length(.x))}.
+\item \verb{*_dbl()} returns a \code{double(length(.x))}.
+\item \verb{*_chr()} returns a \code{character(length(.x))}.
+\item \verb{*_dtr()} returns a \code{\link[data.table:data.table]{data.table::data.table()}} where the results of \code{.f} are put together in an \code{\link[base:rbind]{base::rbind()}} fashion.
+\item \verb{*_dtc()} returns a \code{\link[data.table:data.table]{data.table::data.table()}} where the results of \code{.f} are put together in an \code{\link[base:cbind]{base::cbind()}} fashion.
 }
 }

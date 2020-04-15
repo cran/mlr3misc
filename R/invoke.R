@@ -5,7 +5,7 @@
 #' This function tries hard to not evaluate the passed arguments too eagerly which is
 #' important when working with large R objects.
 #'
-#' It is recommended to pass all arguments named in order to to not rely on on positional
+#' It is recommended to pass all arguments named in order not to rely on on positional
 #' argument matching.
 #'
 #' @param .f (`function()`)\cr
@@ -15,7 +15,7 @@
 #' @param .args (`list()`)\cr
 #'   Additional function arguments passed to `.f`, as (named) `list()`.
 #'   These arguments will be concatenated to the arguments provided via `...`.
-#' @param .opts (`list()`)\cr
+#' @param .opts (named `list()`)\cr
 #'   List of options which are set before the `.f` is called.
 #'   Options are reset to their previous state afterwards.
 #' @param .seed (`integer(1)`)\cr
@@ -27,6 +27,7 @@
 #' invoke(mean, na.rm = TRUE, .args = list(1:10))
 invoke = function(.f, ..., .args = list(), .opts = list(), .seed = NA_integer_) {
   if (length(.opts)) {
+    assert_list(.opts, names = "unique")
     old_opts = options(.opts)
     if (getRversion() < "3.6.0") {
       # fix for resetting some debug options
@@ -35,12 +36,12 @@ invoke = function(.f, ..., .args = list(), .opts = list(), .seed = NA_integer_) 
       nn = nn[map_lgl(old_opts[nn], is.null)]
       old_opts[nn] = FALSE
     }
-    on.exit(options(old_opts))
+    on.exit(options(old_opts), add = TRUE)
   }
 
   if (!is.na(.seed)) {
     prev_seed = get_seed()
-    on.exit(assign(".Random.seed", prev_seed, globalenv()))
+    on.exit(assign(".Random.seed", prev_seed, globalenv()), add = TRUE)
     set.seed(.seed)
   }
 

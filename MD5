@@ -1,6 +1,6 @@
-08dcb2f70988992673c1722c7432140b *DESCRIPTION
+96ba437425f9c02dc9bc46be9ec35d65 *DESCRIPTION
 f52676c23a59634436edf48faa049e33 *NAMESPACE
-06218cff1484c1ce35f4e1dfad08eb86 *NEWS.md
+61a07c2c8dc8dd167328a9d0f56e482b *NEWS.md
 a915c6d6fc9639d8ce67703fa5b8b2b2 *R/Dictionary.R
 62bb6f78b74382f76a4ab5afeafdc8e6 *R/as_factor.R
 bbd8e5f4d004a0ec64088963fc2a400e *R/as_short_string.R
@@ -47,11 +47,11 @@ efe79afffa095431a487807f3ee0c849 *R/shuffle.R
 5dbf32e69a32647cf1a7754dac4b7fbd *R/str_trunc.R
 509cb61f014c8696d023f629f44cb83a *R/topo_sort.R
 3230f8473d646f86eea8f5a712177611 *R/transpose.R
-49405fa9d45e6c9f729a44ef9a2efedb *R/unnest.R
+8a667e1843b3dce5fee1b7e9d9ca5a8a *R/unnest.R
 2435225ee22363649052f3e9a48f9ac3 *R/which_max.R
-0f53e432346323795a7a0f77b41566fc *R/with_package.R
+0da07fe61ac9d57ecb0523b1b0d21dea *R/with_package.R
 e827c2a57292a878b0103241f0cecd7f *R/zzz.R
-5992ef2d77fd846dba2046ddc5e96fe8 *README.md
+295e0f05f40bb9abec370d4862500a31 *README.md
 4f815a964430e576432a7bd742597eac *inst/references.bib
 91c5e72cfe01d1560160dc0d9948a137 *man/Dictionary.Rd
 08dc6558e88d5e04ce842dbc7bd26344 *man/as_factor.Rd
@@ -100,9 +100,9 @@ a36b9293a22f658aeef2cc06dd4a09d9 *man/str_indent.Rd
 9c73bd289bd8ef258792d40b958aec44 *man/str_trunc.Rd
 f30fa56c2067122c83cbbe6f88012990 *man/topo_sort.Rd
 a8c3bdeba738138a165e297cfefdf113 *man/transpose_list.Rd
-e39a8f668c0a81965cbd0b2e498636dd *man/unnest.Rd
+cba2171571076fe59e2eae57a763f98a *man/unnest.Rd
 caa8b0f945a3c68e8c312cd2bf8e643f *man/which_min.Rd
-1a7c3987a92c77914d66362e71f6879b *man/with_package.Rd
+9d25d468422fbcc1bd83805c77b0da95 *man/with_package.Rd
 499275fb36a5de75da99925e16f93682 *src/init.c
 bedbe1a19c81ef387cbe60acdea6e223 *src/keep_in_bounds.c
 3c53feb72beb1ad3a849c8ad4c89efe8 *src/which_max.c
@@ -146,6 +146,6 @@ fce39d0a9622f92872599c1e9e787240 *tests/testthat/test_shuffle.R
 d081ee2dc9e4573caf0710ccf8c03b72 *tests/testthat/test_str_trunc.R
 65e38297a9047b056ea89fd6bac10860 *tests/testthat/test_topo_sort.R
 68de87139e6152eefadb6ee5dbd5dee4 *tests/testthat/test_transpose.R
-83b25fa7bd4f85670ceca82b02fe6e84 *tests/testthat/test_unnest.R
+d586f4bd8fdfff7ecec286f7445cce14 *tests/testthat/test_unnest.R
 6a8590d8213872d8d11496e8a77a638a *tests/testthat/test_which_max.R
 432533f2c8e16d1687e489b56145a7d4 *tests/testthat/test_with_package.R

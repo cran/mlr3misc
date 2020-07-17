@@ -1,3 +1,8 @@
+# mlr3misc 0.4.0
+
+* Added helper functions to assist in generating Rd documentation for 'mlr3'
+  objects.
+
 # mlr3misc 0.3.0
 
 * Introduced a placeholder for column name prefixes in `unnest()`.

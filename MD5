@@ -1,19 +1,20 @@
-fc1175386f3ac0faa241fb494084967e *DESCRIPTION
-dbafa8da89a5b6d1fd3ea1ade9ffd27c *NAMESPACE
-178f8ae995c3c89450e55d615922e711 *NEWS.md
+7ee977048e7321c85f9c00d461722f8f *DESCRIPTION
+17515b279e737cf03a07218bf57de199 *NAMESPACE
+5d62cc92cb9fcd8d062259afd3292a19 *NEWS.md
 a915c6d6fc9639d8ce67703fa5b8b2b2 *R/Dictionary.R
 62bb6f78b74382f76a4ab5afeafdc8e6 *R/as_factor.R
 bbd8e5f4d004a0ec64088963fc2a400e *R/as_short_string.R
 a50ffc0a251cadaa5ec2b0367791cf3c *R/check_packages_installed.R
 5ab13d4065b2ade32dba32124f0849f3 *R/chunk.R
 f8beb01d9f03bc1e0fb09d1c003f2980 *R/cite_bib.R
+d8bba0536f6990c7b4ed768b5b7f1aaa *R/compose.R
 f2f6aa75f52ee3f05824790aba77449f *R/compute_mode.R
 9e1b7f04707ee9d6278eacc0db9cc891 *R/cross_join.R
 0b088820836b67bf43bf694b3c0d5801 *R/dictionary_sugar.R
 b10c04da04ae2feb7e22aacffb347311 *R/did_you_mean.R
 1853c066eb3883126ec6db4f86562c91 *R/distinct_values.R
 4bf117175066179c1c7e8ddb573db1cb *R/encapsulate.R
-0181df93bfd1964bc1357ce2d26d6b53 *R/enframe.R
+def9ed6f57493d4aefd95fa428b3f653 *R/enframe.R
 6b3b083aecc14ac134cf0bc408073bd8 *R/extract_vars.R
 c5a0e26a3cb1d6f04a7e20e63049711e *R/formulate.R
 a098c64449a08bbeefcc1d69e7085a4d *R/get_seed.R
@@ -23,6 +24,7 @@ fb94db749885c3996ec9d6f77ccd4894 *R/insert_named.R
 b812e60e4dd48594bd708dea219d33c7 *R/invoke.R
 314e21c0b4b7df06cfb2f109e4e0e076 *R/is_scalar_na.R
 10d13fc60e79bd7f2dcae74febd318e4 *R/keep_in_bounds.R
+5538fd739f3473d93365d5d6399063d1 *R/leanify.R
 a5cfcd58bfde7db7eab8e76b822451e5 *R/load_dataset.R
 9b3a15a9b213b7ebf16350f3eba2d797 *R/map_values.R
 c7f7bab45c6be531032f10499f57f30e *R/modify.R
@@ -35,7 +37,7 @@ f2a2ef1462d7ca9b46b5bbd74282e758 *R/nin.R
 9aa824ac8c817030d770b995ef73274a *R/probe.R
 3870b5b4fc822bb5ab1de038fff74ddc *R/purrr_map.R
 90c2306b62d7ffa7b657244210474fd0 *R/rcbind.R
-9533fc0df3e7c1eea41d5b6f24bb73fd *R/rd_info.R
+e7fc2a76564b1f16f51a81cda845b27d *R/rd_info.R
 7dcb44fdb33065a1871241dc0d8d4f1e *R/remove_named.R
 04db0272dd9becaef69ed4a4b5ef7520 *R/require_namespaces.R
 d7b4b85091103e8fbca912a8c446eab2 *R/rowwise_table.R
@@ -51,8 +53,8 @@ a178b94644abd4197e935e82e62417e8 *R/str_collapse.R
 8a667e1843b3dce5fee1b7e9d9ca5a8a *R/unnest.R
 2435225ee22363649052f3e9a48f9ac3 *R/which_max.R
 0da07fe61ac9d57ecb0523b1b0d21dea *R/with_package.R
-e827c2a57292a878b0103241f0cecd7f *R/zzz.R
-5a45cee79c89353756a8f83d56b1c786 *README.md
+f889f906d46ad78ececb6810e9918b7e *R/zzz.R
+35c1a302e5f433e3d86c885ef1fa7951 *README.md
 4f815a964430e576432a7bd742597eac *inst/references.bib
 89fee0679f70d1a576cf3f685059571e *man/Dictionary.Rd
 08dc6558e88d5e04ce842dbc7bd26344 *man/as_factor.Rd
@@ -61,6 +63,7 @@ a4555a4ffea8c693d54553f140b31b70 *man/check_packages_installed.Rd
 43f464bf89566e6796bcf2720957bd10 *man/chunk_vector.Rd
 16c629fe484a0365083a11b29b13bfe0 *man/cite_bib.Rd
 fcffc7bd6fe49980a2de3cf786095df2 *man/compat-map.Rd
+9a42cb366e5ad0ca80c7851eaa1ed3bc *man/compose.Rd
 3d232f6161a4fc5a00dbd260128cbcbb *man/compute_mode.Rd
 8beb5904f60d746782496fb3e657385a *man/cross_join.Rd
 62fa030c99320f59d5da6f4a75821b1e *man/dictionary_sugar_get.Rd
@@ -78,6 +81,7 @@ cf12558aeab63f0820024b01941c8705 *man/insert_named.Rd
 549fc58992484592ad642577329e1018 *man/invoke.Rd
 fd245796d67adfa92e3edc165437cdd7 *man/is_scalar_na.Rd
 bf1a46b1e915dc6718b6fd2fdd56e18e *man/keep_in_bounds.Rd
+0e31a359dc121d929926985793ed3ea5 *man/leanify_r6.Rd
 849d425307ba6289e4571d6cfb7e2219 *man/load_dataset.Rd
 7b896536769a3e64630cd4e77a42defd *man/macros/cite.Rd
 f7101615b0e0363ee2c6e6d85c6a5a11 *man/map_values.Rd
@@ -90,7 +94,7 @@ a004ef522d21c560382bbed075f94553 *man/nin.Rd
 36a6e1850e1f662b74d76d01f8e1c8ce *man/open_help.Rd
 87b4a4825ca1da1ac215c0210bcb83ce *man/printf.Rd
 f3155c1e7d341ca6dce811f48313a3fa *man/rcbind.Rd
-2ef3191e70b74ff598e337cef7110d3d *man/rd_info.Rd
+3a13fe1beced4889de2403a2225b9e43 *man/rd_info.Rd
 da08be7570603a85251ad36383793b1a *man/require_namespaces.Rd
 26c655e84dcd1bc89ff4442be6be6825 *man/rowwise_table.Rd
 c6e8f9d6d65b815117c4d90adee31e1a *man/sequence_helpers.Rd
@@ -117,7 +121,8 @@ e2e31521be38ff80aad99036cf95d952 *tests/testthat/test_Dictionary.R
 1e019ed0cc5967564f172d4a8190e75d *tests/testthat/test_as_short_string.R
 68047de0f07febf4e7ee2ab829e36652 *tests/testthat/test_check_packages_installed.R
 b468e57371f983873c9923d05f8ac55f *tests/testthat/test_chunk.R
-f11205758276982d8c8b1df9bcf5ac41 *tests/testthat/test_cross_join.R
+fe40b17a9e1bb35db90a7b99feb65208 *tests/testthat/test_compose.R
+a6f0a34e07c99c57db12e9841a7c521c *tests/testthat/test_cross_join.R
 9af895ddc7b94577206eae2a34a1babb *tests/testthat/test_distinct_values.R
 ef37a25eb4fec6686398247e9262abfd *tests/testthat/test_encapsulate.R
 0abbe7747a11c31299a5a9d822e10753 *tests/testthat/test_extract_vars.R
@@ -129,6 +134,7 @@ fa57b22b0de63d1c7ea0bfb7a20d79c6 *tests/testthat/test_insert.R
 82d57918ce126b53111e4f8021daed25 *tests/testthat/test_invoke.R
 c459eb8afee7d275472af75a3b5a7f15 *tests/testthat/test_is_scalar_na.R
 27a3061951367cf22992b40054a31019 *tests/testthat/test_keep_in_bounds.R
+aee44c80a8b9979dab2869eb6d28a802 *tests/testthat/test_leanify.R
 01c9087f28def8a67dd1ee9cbe41a145 *tests/testthat/test_load_data.R
 7a919746a7c9171899700e9f27a084b1 *tests/testthat/test_map.R
 2e2a874c7663e25ba2a6c7428e9ccdfa *tests/testthat/test_map_values.R
@@ -148,6 +154,6 @@ fce39d0a9622f92872599c1e9e787240 *tests/testthat/test_shuffle.R
 d081ee2dc9e4573caf0710ccf8c03b72 *tests/testthat/test_str_trunc.R
 97128c381525b1c0d4e62263a84001d7 *tests/testthat/test_topo_sort.R
 68de87139e6152eefadb6ee5dbd5dee4 *tests/testthat/test_transpose.R
-d586f4bd8fdfff7ecec286f7445cce14 *tests/testthat/test_unnest.R
+a54c5fd6b6f61270e66ec32147e446fd *tests/testthat/test_unnest.R
 6a8590d8213872d8d11496e8a77a638a *tests/testthat/test_which_max.R
 432533f2c8e16d1687e489b56145a7d4 *tests/testthat/test_with_package.R

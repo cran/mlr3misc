@@ -1,3 +1,9 @@
+# mlr3misc 0.5.0
+
+* Added `compose()` function for function composition.
+* Added method `leanify_package()` that shrinks the size of serialized R6
+  objects.
+
 # mlr3misc 0.4.0
 
 * Added helper functions to assist in generating Rd documentation for 'mlr3'

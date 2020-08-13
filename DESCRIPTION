@@ -1,6 +1,6 @@
 Package: mlr3misc
 Title: Helper Functions for 'mlr3'
-Version: 0.4.0
+Version: 0.5.0
 Authors@R: 
     c(person(given = "Michel",
              family = "Lang",
@@ -26,9 +26,9 @@ Suggests: bibtex, callr, evaluate, paradox, testthat
 Encoding: UTF-8
 NeedsCompilation: yes
 RoxygenNote: 7.1.1
-Packaged: 2020-07-17 09:18:38 UTC; lang
+Packaged: 2020-08-13 08:54:04 UTC; lang
 Author: Michel Lang [cre, aut] (<https://orcid.org/0000-0001-9754-0393>),
   Patrick Schratz [aut] (<https://orcid.org/0000-0003-0748-6624>)
 Maintainer: Michel Lang <michellang@gmail.com>
 Repository: CRAN
-Date/Publication: 2020-07-17 09:50:02 UTC
+Date/Publication: 2020-08-13 09:30:02 UTC

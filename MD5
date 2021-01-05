@@ -1,6 +1,6 @@
-6cb938a89b71705e5bbdf7b579dc0b47 *DESCRIPTION
-60d82de08fcf8fce31ec17fdf12d0130 *NAMESPACE
-e2828254173de688922b0ea5cdf95fb3 *NEWS.md
+ef445d1df3f88e02012a24e498d041f3 *DESCRIPTION
+621436590e4f6bb7e41f2dd1a6e72369 *NAMESPACE
+32b231da8a3ca25476d8f4edefacb661 *NEWS.md
 a915c6d6fc9639d8ce67703fa5b8b2b2 *R/Dictionary.R
 62bb6f78b74382f76a4ab5afeafdc8e6 *R/as_factor.R
 bbd8e5f4d004a0ec64088963fc2a400e *R/as_short_string.R
@@ -16,7 +16,8 @@ b10c04da04ae2feb7e22aacffb347311 *R/did_you_mean.R
 12e1a185ea0e92b1b29ed4e64e16f969 *R/encapsulate.R
 def9ed6f57493d4aefd95fa428b3f653 *R/enframe.R
 6b3b083aecc14ac134cf0bc408073bd8 *R/extract_vars.R
-c5a0e26a3cb1d6f04a7e20e63049711e *R/formulate.R
+a1159802c259d57ca347b833bd11db4a *R/format_bib.R
+e1f570846a59741be8f7e87e0f9fb0fc *R/formulate.R
 a098c64449a08bbeefcc1d69e7085a4d *R/get_seed.R
 a59b6c0eadf9629697e180264395e2b9 *R/has_element.R
 a361aec2e8468a1d9b3a40ce823bb24a *R/ids.R
@@ -35,7 +36,7 @@ f2a2ef1462d7ca9b46b5bbd74282e758 *R/nin.R
 3bc82f01281697c3b322a5b1cff2a43f *R/open_help.R
 412a0f7866af4246f3145d46a91ac3af *R/printf.R
 9aa824ac8c817030d770b995ef73274a *R/probe.R
-3870b5b4fc822bb5ab1de038fff74ddc *R/purrr_map.R
+cd63832501c2fe8355c02d57e0eacc58 *R/purrr_map.R
 90c2306b62d7ffa7b657244210474fd0 *R/rcbind.R
 e7fc2a76564b1f16f51a81cda845b27d *R/rd_info.R
 4ad4d357e29f8f690867b200736b138d *R/register_namespace_callback.R
@@ -61,7 +62,7 @@ abb085941311eb758748e5ba6c255b43 *README.md
 c882acca09900dc0c73915d1332d929f *man/as_short_string.Rd
 a4555a4ffea8c693d54553f140b31b70 *man/check_packages_installed.Rd
 43f464bf89566e6796bcf2720957bd10 *man/chunk_vector.Rd
-fcffc7bd6fe49980a2de3cf786095df2 *man/compat-map.Rd
+20deb38ac865142d52743ae2ebdc22f4 *man/compat-map.Rd
 9a42cb366e5ad0ca80c7851eaa1ed3bc *man/compose.Rd
 3d232f6161a4fc5a00dbd260128cbcbb *man/compute_mode.Rd
 d6eb5b6885893b8e076de0a098eb1294 *man/crate.Rd
@@ -73,7 +74,8 @@ d2eb389b5ae9201d1bf7ea17e227e8d2 *man/encapsulate.Rd
 1ea4365dda2eb595a74563a3141d2ca0 *man/enframe.Rd
 60734ce0e6b17e809e7ecb0a84689704 *man/extract_vars.Rd
 82e14b4c5103f6c7c22afbdb75cb5dfc *man/figures/logo.png
-49ab56a505bd2779f27b65ade0bf70e5 *man/formulate.Rd
+7997990b2e8c1095321fb6fb6658055a *man/format_bib.Rd
+1defa8a0818862f998922c04c3776ab6 *man/formulate.Rd
 5bc8a163676e91f01240c04276e8ade1 *man/get_seed.Rd
 2fe9548aeecc95633d4b320d84130377 *man/has_element.Rd
 bd7002956701de52f50856fe8d981d5b *man/ids.Rd
@@ -128,7 +130,8 @@ d678e4d5fc2dc8c2edc761fb5f26a669 *tests/testthat/test_crate.R
 00572844bd4cfb332af72ef214d84182 *tests/testthat/test_distinct_values.R
 c065c451e2370d82efbafd69276147c5 *tests/testthat/test_encapsulate.R
 692bdab3b85aaba3a8e5920b33ad4c1c *tests/testthat/test_extract_vars.R
-f52f8a24d33f05c32d4be353635a36ff *tests/testthat/test_formulate.R
+68ebe67c44cf09c625e26156fc13b035 *tests/testthat/test_format_bib.R
+509644525964990efc5b39c70cc3d392 *tests/testthat/test_formulate.R
 78ad185cb23b6d2159224a6341cff934 *tests/testthat/test_get_seed.R
 222719558c751b7b36e5dae472f0b679 *tests/testthat/test_has_element.R
 b00db35a8af89371c8c7b74ac554347a *tests/testthat/test_ids.R
@@ -138,7 +141,7 @@ b00db35a8af89371c8c7b74ac554347a *tests/testthat/test_ids.R
 422ed5acfbf0f35bb709cab4863c81f5 *tests/testthat/test_keep_in_bounds.R
 e7cf018b612e7fa875b7e00e9e080bc7 *tests/testthat/test_leanify.R
 239591a552620b8ff5812d89e2444fd0 *tests/testthat/test_load_data.R
-d7925b37be065cd170b57ad86d0fd16d *tests/testthat/test_map.R
+66ae06c9c06ef1b59c19dd448298c94b *tests/testthat/test_map.R
 7b576b13c646efc0688ff90cb4350d81 *tests/testthat/test_map_values.R
 5de69c16284fffc35602c60c1ffe16b6 *tests/testthat/test_modify.R
 67b2782bcafb774986fafcdb91f1fb08 *tests/testthat/test_named_list.R
@@ -146,7 +149,6 @@ d7925b37be065cd170b57ad86d0fd16d *tests/testthat/test_map.R
 430f5d1565e0f08a1ccccc0be7ef13e2 *tests/testthat/test_names2.R
 5d6d495228ecf16c83e527766dc0e32a *tests/testthat/test_nin.R
 71c91fb5489d97135fd6f83b4de0c227 *tests/testthat/test_printf.R
-d41d8cd98f00b204e9800998ecf8427e *tests/testthat/test_purrr_detect.R
 d5bb86d3ac0e65105f022ffdfa38edb9 *tests/testthat/test_rcbind.R
 d1bd9bed25666eaea6c8c1f0bf4bb7ab *tests/testthat/test_require_namespaces.R
 1ea87b5d4a1de7130f5896b4d0602d38 *tests/testthat/test_rowwise_table.R

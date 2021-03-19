@@ -1,6 +1,6 @@
-ef445d1df3f88e02012a24e498d041f3 *DESCRIPTION
-621436590e4f6bb7e41f2dd1a6e72369 *NAMESPACE
-32b231da8a3ca25476d8f4edefacb661 *NEWS.md
+66f87426e2527b60c7431fa5704a400c *DESCRIPTION
+fb727869a3f0d42cd13ed76483324619 *NAMESPACE
+9156469abb298f780de19c3646765fc1 *NEWS.md
 a915c6d6fc9639d8ce67703fa5b8b2b2 *R/Dictionary.R
 62bb6f78b74382f76a4ab5afeafdc8e6 *R/as_factor.R
 bbd8e5f4d004a0ec64088963fc2a400e *R/as_short_string.R
@@ -9,7 +9,7 @@ a50ffc0a251cadaa5ec2b0367791cf3c *R/check_packages_installed.R
 d8bba0536f6990c7b4ed768b5b7f1aaa *R/compose.R
 f2f6aa75f52ee3f05824790aba77449f *R/compute_mode.R
 8a16d19fe6840603200f0afa418c1864 *R/crate.R
-9e1b7f04707ee9d6278eacc0db9cc891 *R/cross_join.R
+9ca2ca3ecc500ab75267954c191e99ab *R/cross_join.R
 0b088820836b67bf43bf694b3c0d5801 *R/dictionary_sugar.R
 b10c04da04ae2feb7e22aacffb347311 *R/did_you_mean.R
 1853c066eb3883126ec6db4f86562c91 *R/distinct_values.R
@@ -17,7 +17,7 @@ b10c04da04ae2feb7e22aacffb347311 *R/did_you_mean.R
 def9ed6f57493d4aefd95fa428b3f653 *R/enframe.R
 6b3b083aecc14ac134cf0bc408073bd8 *R/extract_vars.R
 a1159802c259d57ca347b833bd11db4a *R/format_bib.R
-e1f570846a59741be8f7e87e0f9fb0fc *R/formulate.R
+12d15777b3bc8e28772e2db81cdd7ea8 *R/formulate.R
 a098c64449a08bbeefcc1d69e7085a4d *R/get_seed.R
 a59b6c0eadf9629697e180264395e2b9 *R/has_element.R
 a361aec2e8468a1d9b3a40ce823bb24a *R/ids.R
@@ -41,6 +41,7 @@ cd63832501c2fe8355c02d57e0eacc58 *R/purrr_map.R
 e7fc2a76564b1f16f51a81cda845b27d *R/rd_info.R
 4ad4d357e29f8f690867b200736b138d *R/register_namespace_callback.R
 4b6358c39a38edcc2fc04e389bc8d4da *R/remove_named.R
+ed4d51d42e7038973b6a9c52a4ad87d2 *R/reorder_vector.R
 02a744b7c29db286d915c4a0b20ba7fe *R/require_namespaces.R
 d7b4b85091103e8fbca912a8c446eab2 *R/rowwise_table.R
 b5e16237871c63f74c857ffce7e18af7 *R/seq.R
@@ -56,7 +57,7 @@ a178b94644abd4197e935e82e62417e8 *R/str_collapse.R
 2435225ee22363649052f3e9a48f9ac3 *R/which_max.R
 0da07fe61ac9d57ecb0523b1b0d21dea *R/with_package.R
 f889f906d46ad78ececb6810e9918b7e *R/zzz.R
-abb085941311eb758748e5ba6c255b43 *README.md
+3540c8b3c6025372c357ad7bf530b532 *README.md
 89fee0679f70d1a576cf3f685059571e *man/Dictionary.Rd
 08dc6558e88d5e04ce842dbc7bd26344 *man/as_factor.Rd
 c882acca09900dc0c73915d1332d929f *man/as_short_string.Rd
@@ -75,7 +76,7 @@ d2eb389b5ae9201d1bf7ea17e227e8d2 *man/encapsulate.Rd
 60734ce0e6b17e809e7ecb0a84689704 *man/extract_vars.Rd
 82e14b4c5103f6c7c22afbdb75cb5dfc *man/figures/logo.png
 7997990b2e8c1095321fb6fb6658055a *man/format_bib.Rd
-1defa8a0818862f998922c04c3776ab6 *man/formulate.Rd
+08b33b89d896704b220478cb016b7068 *man/formulate.Rd
 5bc8a163676e91f01240c04276e8ade1 *man/get_seed.Rd
 2fe9548aeecc95633d4b320d84130377 *man/has_element.Rd
 bd7002956701de52f50856fe8d981d5b *man/ids.Rd
@@ -98,6 +99,7 @@ a004ef522d21c560382bbed075f94553 *man/nin.Rd
 f3155c1e7d341ca6dce811f48313a3fa *man/rcbind.Rd
 3a13fe1beced4889de2403a2225b9e43 *man/rd_info.Rd
 1f26c156757fb18d3268028851434f3e *man/register_namespace_callback.Rd
+b9df05203637e6ef92d082268a63ccd9 *man/reorder_vector.Rd
 cd63a0823760ca6897c776f3cd4ac89e *man/require_namespaces.Rd
 26c655e84dcd1bc89ff4442be6be6825 *man/rowwise_table.Rd
 c6e8f9d6d65b815117c4d90adee31e1a *man/sequence_helpers.Rd
@@ -150,6 +152,7 @@ e7cf018b612e7fa875b7e00e9e080bc7 *tests/testthat/test_leanify.R
 5d6d495228ecf16c83e527766dc0e32a *tests/testthat/test_nin.R
 71c91fb5489d97135fd6f83b4de0c227 *tests/testthat/test_printf.R
 d5bb86d3ac0e65105f022ffdfa38edb9 *tests/testthat/test_rcbind.R
+e11d36ba5f1cff5c4080974ea3c205a7 *tests/testthat/test_reorder_vector.R
 d1bd9bed25666eaea6c8c1f0bf4bb7ab *tests/testthat/test_require_namespaces.R
 1ea87b5d4a1de7130f5896b4d0602d38 *tests/testthat/test_rowwise_table.R
 b6f63ff30179092b9eda912ab6bc4001 *tests/testthat/test_seq.R

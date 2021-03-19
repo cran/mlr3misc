@@ -1,5 +1,11 @@
 # mlr3misc 0.7.0
 
+* New function `reorder_vector()`.
+* `formulate()` can now quote all terms, defaulting to quote all terms on the
+  right hand side.
+
+# mlr3misc 0.7.0
+
 * Make more map functions work nicely with data frames and data tables.
 * `formulate()` now supports multiple LHS terms.
 * Added `format_bib()` and `cite_bib()` helpers for working with bibentires and

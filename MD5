@@ -1,6 +1,6 @@
-31c70d35270b06a23eb9b5150c89ac77 *DESCRIPTION
+6eead7ff12764be381f3f197530f1464 *DESCRIPTION
 a80c06ee07dc942d2faee3e36dfa4842 *NAMESPACE
-06d59b60d8e958db9ffd3a563e0bf21f *NEWS.md
+5fd4b0c30195e4e886ef6c644ac0861b *NEWS.md
 a915c6d6fc9639d8ce67703fa5b8b2b2 *R/Dictionary.R
 62bb6f78b74382f76a4ab5afeafdc8e6 *R/as_factor.R
 bbd8e5f4d004a0ec64088963fc2a400e *R/as_short_string.R
@@ -116,7 +116,8 @@ a8c3bdeba738138a165e297cfefdf113 *man/transpose_list.Rd
 cba2171571076fe59e2eae57a763f98a *man/unnest.Rd
 5aade90930dd8131337e40237fa0c49e *man/which_min.Rd
 9d25d468422fbcc1bd83805c77b0da95 *man/with_package.Rd
-b93e72ed6abac56c7cc92ce866c8a116 *src/count_missing.c
+5283fb10f1406f2f8d79816173b9ef3a *src/backports.h
+8bccf2e1c7aef305f1e1436996abea27 *src/count_missing.c
 dd066cc01ddbf3bfc025ddcb5027d071 *src/init.c
 bedbe1a19c81ef387cbe60acdea6e223 *src/keep_in_bounds.c
 3c53feb72beb1ad3a849c8ad4c89efe8 *src/which_max.c

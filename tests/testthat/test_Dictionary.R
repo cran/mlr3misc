@@ -24,6 +24,13 @@ test_that("Dictionary", {
   expect_data_table(as.data.table(d), nrows = 1L)
 })
 
+test_that("Dictionary clones R6", {
+  foo = R6Class("Foo")$new()
+  d = Dictionary$new()
+  d$add("f", foo)
+  expect_false(data.table::address(foo) == data.table::address(d$get("f")))
+})
+
 test_that("Dictionary required args", {
   foo = R6Class("Foo", public = list(x = 0))
   x = Dictionary$new()
@@ -46,7 +53,10 @@ test_that("Dictionary throws exception on unnamed args", {
 })
 
 test_that("dictionary_sugar_get", {
-  Foo = R6::R6Class("Foo", public = list(x = 0, y = 0, key = 0, initialize = function(y, key = -1) { self$y = y ; self$key = key }), cloneable = TRUE)
+  Foo = R6::R6Class("Foo", public = list(x = 0, y = 0, key = 0, initialize = function(y, key = -1) {
+    self$y = y
+    self$key = key
+  }), cloneable = TRUE)
   d = Dictionary$new()
   d$add("f1", Foo)
   x = dictionary_sugar_get(d, "f1", y = 99, x = 1)
@@ -67,7 +77,10 @@ test_that("dictionary_sugar_get", {
 })
 
 test_that("mget", {
-  Foo = R6::R6Class("Foo", public = list(id = "foo", x = 0, y = 0, key = 0, initialize = function(y, key = -1) { self$y = y ; self$key = key }), cloneable = TRUE)
+  Foo = R6::R6Class("Foo", public = list(id = "foo", x = 0, y = 0, key = 0, initialize = function(y, key = -1) {
+    self$y = y
+    self$key = key
+  }), cloneable = TRUE)
   d = Dictionary$new()
   d$add("f1", Foo)
   d$add("f2", Foo)

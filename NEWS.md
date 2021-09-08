@@ -1,3 +1,10 @@
+# mlr3misc 0.9.4
+
+* Added helper `capitalize()`.
+* Added helper `to_decimal()`.
+* Fixed cleanup in `register_namespace_callback()`.
+
+
 # mlr3misc 0.9.3
 
 * New (internal) helper functions: `calculate_hash()` and `assert_ro_binding()`

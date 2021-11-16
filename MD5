@@ -1,6 +1,6 @@
-94f5cb305eb94608d9b1fbacff986dc9 *DESCRIPTION
-25fb102bfa43fc1d439d9c9a2f00b47f *NAMESPACE
-2d87ad8f13f73a3a8ea39a5aea780bd9 *NEWS.md
+391aef81d3e8d017567dfe500ccf66b6 *DESCRIPTION
+4ba08536700e76c0e94cca6139b3226b *NAMESPACE
+5a51dbb7d05c5893e31057c1045b54d2 *NEWS.md
 fcb927ef6083c7165a41db7ce36ca1e8 *R/Dictionary.R
 62bb6f78b74382f76a4ab5afeafdc8e6 *R/as_factor.R
 bbd8e5f4d004a0ec64088963fc2a400e *R/as_short_string.R
@@ -18,7 +18,7 @@ ab9f738d4495547128261f0044dd80db *R/count_missing.R
 b10c04da04ae2feb7e22aacffb347311 *R/did_you_mean.R
 1853c066eb3883126ec6db4f86562c91 *R/distinct_values.R
 5f97e671cba28ae3617a8f4207f89cc0 *R/encapsulate.R
-9ccee4f3aeea6357c0791b81da8f00f4 *R/enframe.R
+2dfb88744df94ffc355d13748dfe32e3 *R/enframe.R
 6b3b083aecc14ac134cf0bc408073bd8 *R/extract_vars.R
 a1159802c259d57ca347b833bd11db4a *R/format_bib.R
 6a4432b02698116e6e62960c49bc5d06 *R/formulate.R
@@ -26,7 +26,7 @@ a098c64449a08bbeefcc1d69e7085a4d *R/get_seed.R
 a59b6c0eadf9629697e180264395e2b9 *R/has_element.R
 a361aec2e8468a1d9b3a40ce823bb24a *R/ids.R
 16482b0a85b8eb9ee2f05a553d971a04 *R/insert_named.R
-ac6005d8c4ed996f53c68ad8b7137f77 *R/invoke.R
+ff73fbfd829d79c029c7004f11492c34 *R/invoke.R
 314e21c0b4b7df06cfb2f109e4e0e076 *R/is_scalar_na.R
 10d13fc60e79bd7f2dcae74febd318e4 *R/keep_in_bounds.R
 5538fd739f3473d93365d5d6399063d1 *R/leanify.R
@@ -42,7 +42,7 @@ f986f7080d197756f9c5d060aee8ea8d *R/printf.R
 9aa824ac8c817030d770b995ef73274a *R/probe.R
 df4536f325ad13ff0edb67ea25f31e7e *R/purrr_map.R
 90c2306b62d7ffa7b657244210474fd0 *R/rcbind.R
-abbeb9a89ce34fc091f714370b7eaa39 *R/rd_info.R
+5c5ec9d9b2cb1cc6c5cd1f1a61ec48d6 *R/rd_info.R
 09b0b9761ad6e1be6967f80ac4053405 *R/register_namespace_callback.R
 4b6358c39a38edcc2fc04e389bc8d4da *R/remove_named.R
 1f35cb74c4f7f8328ae12e6e108ecdb1 *R/reorder_vector.R
@@ -81,7 +81,7 @@ d6eb5b6885893b8e076de0a098eb1294 *man/crate.Rd
 2d0fe5c4d037b123ce92a7ccc142434e *man/did_you_mean.Rd
 32676faf0159b7a32d84c6f6bf3caffa *man/distinct_values.Rd
 dd1f54bdca2bca86ddd5d2b2c81f4226 *man/encapsulate.Rd
-1ea4365dda2eb595a74563a3141d2ca0 *man/enframe.Rd
+98291e06e5110578f2d99456855a19ba *man/enframe.Rd
 60734ce0e6b17e809e7ecb0a84689704 *man/extract_vars.Rd
 82e14b4c5103f6c7c22afbdb75cb5dfc *man/figures/logo.png
 7997990b2e8c1095321fb6fb6658055a *man/format_bib.Rd
@@ -90,14 +90,14 @@ dd1f54bdca2bca86ddd5d2b2c81f4226 *man/encapsulate.Rd
 2fe9548aeecc95633d4b320d84130377 *man/has_element.Rd
 bd7002956701de52f50856fe8d981d5b *man/ids.Rd
 cf12558aeab63f0820024b01941c8705 *man/insert_named.Rd
-8a484b29e3435c5bd09e86c67fd64493 *man/invoke.Rd
+f898d3ab34b508c9974e6a26fa628d8b *man/invoke.Rd
 fd245796d67adfa92e3edc165437cdd7 *man/is_scalar_na.Rd
 bf1a46b1e915dc6718b6fd2fdd56e18e *man/keep_in_bounds.Rd
 0e31a359dc121d929926985793ed3ea5 *man/leanify_r6.Rd
 849d425307ba6289e4571d6cfb7e2219 *man/load_dataset.Rd
 7b896536769a3e64630cd4e77a42defd *man/macros/cite.Rd
 f7101615b0e0363ee2c6e6d85c6a5a11 *man/map_values.Rd
-ed00e199776d2d1248b906c31657de3e *man/mlr3misc-package.Rd
+d182222e0776696e4b5cca91ad549d7f *man/mlr3misc-package.Rd
 27dbbc1a38307a78dd1b3eb3538eb4dc *man/modify_if.Rd
 ccfbe7f1083cff0e8549b2f5699c2c6e *man/named_list.Rd
 9ff9dc718ccf25a806cd847cf6040f95 *man/named_vector.Rd

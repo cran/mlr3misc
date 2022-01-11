@@ -204,3 +204,35 @@ test_that("detect", {
 test_that("pmap does not segfault (#56)", {
   expect_error(pmap(1:4, function(x) x), "list")
 })
+
+test_that("walk", {
+  .x = list(a = 1, b = 2)
+  sq = function(x) x^2
+  expect_equal(walk(.x, sq), .x)
+})
+
+test_that("iwalk", {
+  .x = list(a = 1, b = 2)
+  sq = function(x, name) x^2
+  expect_equal(iwalk(.x, sq), .x)
+})
+
+test_that("pwalk", {
+  .x = list(a = 1:3, b = 2)
+  f = function(a, b) a + b
+  expect_equal(pwalk(.x, f), .x)
+})
+
+test_that("map_br / map_bc", {
+  .x = list(1:3, 4:6, 7:9)
+
+  expect_equal(
+    map_bc(.x, identity),
+    matrix(1:9, nrow = 3, byrow = FALSE)
+  )
+
+  expect_equal(
+    map_br(.x, identity),
+    matrix(1:9, nrow = 3, byrow = TRUE)
+  )
+})

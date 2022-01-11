@@ -7,6 +7,8 @@
 \alias{map_int}
 \alias{map_dbl}
 \alias{map_chr}
+\alias{map_br}
+\alias{map_bc}
 \alias{map_dtr}
 \alias{map_dtc}
 \alias{pmap}
@@ -31,6 +33,9 @@
 \alias{every}
 \alias{some}
 \alias{detect}
+\alias{walk}
+\alias{iwalk}
+\alias{pwalk}
 \title{Apply Functions in the spirit of 'purrr'}
 \usage{
 map(.x, .f, ...)
@@ -42,6 +47,10 @@ map_int(.x, .f, ...)
 map_dbl(.x, .f, ...)
 
 map_chr(.x, .f, ...)
+
+map_br(.x, .f, ...)
+
+map_bc(.x, .f, ...)
 
 map_dtr(.x, .f, ..., .fill = FALSE, .idcol = NULL)
 
@@ -90,6 +99,12 @@ every(.x, .p, ...)
 some(.x, .p, ...)
 
 detect(.x, .p, ...)
+
+walk(.x, .f, ...)
+
+iwalk(.x, .f, ...)
+
+pwalk(.x, .f, ...)
 }
 \arguments{
 \item{.x}{(\code{list()} | atomic \code{vector()}).}
@@ -128,17 +143,21 @@ each vector of \code{.x}, then the second element of \code{.x}, and so on.
 \item \code{every()} is \code{TRUE} if predicate \code{.p} evaluates to \code{TRUE} for each \code{.x}.
 \item \code{some()} is \code{TRUE} if predicate \code{.p} evaluates to \code{TRUE} for at least one \code{.x}.
 \item \code{detect()} returns the first element where predicate \code{.p} evaluates to \code{TRUE}.
+\item \code{walk()}, \code{iwalk()} and \code{pwalk()} are the counterparts to \code{map()}, \code{imap()} and \code{pmap()}, but
+just visit (or change by reference) the elements of \code{.x}. They return input \code{.x} invisibly.
 }
 
-Additionally, the functions \code{map()}, \code{imap()} and \code{pmap} have type-safe variants with the following suffixes:
+Additionally, the functions \code{map()}, \code{imap()} and \code{pmap()} have type-safe variants with the following suffixes:
 \itemize{
 \item \verb{*_lgl()} returns a \code{logical(length(.x))}.
 \item \verb{*_int()} returns a \code{integer(length(.x))}.
 \item \verb{*_dbl()} returns a \code{double(length(.x))}.
 \item \verb{*_chr()} returns a \code{character(length(.x))}.
+\item \verb{*_br()} returns an object where the results of \code{.f} are put together with \code{\link[base:cbind]{base::rbind()}}.
+\item \verb{*_bc()} returns an object where the results of \code{.f} are put together with \code{\link[base:cbind]{base::cbind()}}.
 \item \verb{*_dtr()} returns a \code{\link[data.table:data.table]{data.table::data.table()}} where the results of \code{.f} are put together
 in an \code{\link[base:cbind]{base::rbind()}} fashion.
-\item \verb{*_dtc()} returns a \code{\link[data.table:data.table]{data.table::data.table()}} where the results of \code{.f} are put together
-in an \code{\link[base:cbind]{base::cbind()}} fashion.
+\item \verb{*_dtc()} returns a \code{\link[data.table:data.table]{data.table::data.table()}} where the results of \code{.f} are put
+together in an \code{\link[base:cbind]{base::cbind()}} fashion.
 }
 }

@@ -1,6 +1,6 @@
-391aef81d3e8d017567dfe500ccf66b6 *DESCRIPTION
-4ba08536700e76c0e94cca6139b3226b *NAMESPACE
-5a51dbb7d05c5893e31057c1045b54d2 *NEWS.md
+214ce5594204afe18b62b1980e99ceb4 *DESCRIPTION
+c479b169d5405ab79c973401f64f2b9e *NAMESPACE
+ffd6dbdf73a05b8ff21d213b016d2c1d *NEWS.md
 fcb927ef6083c7165a41db7ce36ca1e8 *R/Dictionary.R
 62bb6f78b74382f76a4ab5afeafdc8e6 *R/as_factor.R
 bbd8e5f4d004a0ec64088963fc2a400e *R/as_short_string.R
@@ -22,6 +22,7 @@ b10c04da04ae2feb7e22aacffb347311 *R/did_you_mean.R
 6b3b083aecc14ac134cf0bc408073bd8 *R/extract_vars.R
 a1159802c259d57ca347b833bd11db4a *R/format_bib.R
 6a4432b02698116e6e62960c49bc5d06 *R/formulate.R
+e8b271863f3707674d02389f99de74b7 *R/get_private.R
 a098c64449a08bbeefcc1d69e7085a4d *R/get_seed.R
 a59b6c0eadf9629697e180264395e2b9 *R/has_element.R
 a361aec2e8468a1d9b3a40ce823bb24a *R/ids.R
@@ -40,9 +41,10 @@ f2a2ef1462d7ca9b46b5bbd74282e758 *R/nin.R
 3bc82f01281697c3b322a5b1cff2a43f *R/open_help.R
 f986f7080d197756f9c5d060aee8ea8d *R/printf.R
 9aa824ac8c817030d770b995ef73274a *R/probe.R
-df4536f325ad13ff0edb67ea25f31e7e *R/purrr_map.R
+2bc71c598acacd4521decde040472dca *R/purrr_map.R
 90c2306b62d7ffa7b657244210474fd0 *R/rcbind.R
 5c5ec9d9b2cb1cc6c5cd1f1a61ec48d6 *R/rd_info.R
+fbf6a69a1e840420f310055da44cc523 *R/recycle_vector.R
 09b0b9761ad6e1be6967f80ac4053405 *R/register_namespace_callback.R
 4b6358c39a38edcc2fc04e389bc8d4da *R/remove_named.R
 1f35cb74c4f7f8328ae12e6e108ecdb1 *R/reorder_vector.R
@@ -71,7 +73,7 @@ c882acca09900dc0c73915d1332d929f *man/as_short_string.Rd
 7a25699bd2b939a07794696fe77ec9a0 *man/capitalize.Rd
 a4555a4ffea8c693d54553f140b31b70 *man/check_packages_installed.Rd
 43f464bf89566e6796bcf2720957bd10 *man/chunk_vector.Rd
-20deb38ac865142d52743ae2ebdc22f4 *man/compat-map.Rd
+e6c50d1c482a5ea5c1147c8c74cbd9f8 *man/compat-map.Rd
 9a42cb366e5ad0ca80c7851eaa1ed3bc *man/compose.Rd
 3d232f6161a4fc5a00dbd260128cbcbb *man/compute_mode.Rd
 6eea2e452e000638e0608842a004a06a *man/count_missing.Rd
@@ -86,6 +88,7 @@ dd1f54bdca2bca86ddd5d2b2c81f4226 *man/encapsulate.Rd
 82e14b4c5103f6c7c22afbdb75cb5dfc *man/figures/logo.png
 7997990b2e8c1095321fb6fb6658055a *man/format_bib.Rd
 08b33b89d896704b220478cb016b7068 *man/formulate.Rd
+dca9ace53fd2c980af6124b2ea4445ec *man/get_private.Rd
 5bc8a163676e91f01240c04276e8ade1 *man/get_seed.Rd
 2fe9548aeecc95633d4b320d84130377 *man/has_element.Rd
 bd7002956701de52f50856fe8d981d5b *man/ids.Rd
@@ -107,6 +110,7 @@ a004ef522d21c560382bbed075f94553 *man/nin.Rd
 87b4a4825ca1da1ac215c0210bcb83ce *man/printf.Rd
 f3155c1e7d341ca6dce811f48313a3fa *man/rcbind.Rd
 3a13fe1beced4889de2403a2225b9e43 *man/rd_info.Rd
+7928c20ac5e75505ffaf2bc84ca8437a *man/recycle_vectors.Rd
 1f26c156757fb18d3268028851434f3e *man/register_namespace_callback.Rd
 65e8b5bf1eb4d5ae26b334dfe51feed0 *man/reorder_vector.Rd
 cd63a0823760ca6897c776f3cd4ac89e *man/require_namespaces.Rd
@@ -157,7 +161,7 @@ b00db35a8af89371c8c7b74ac554347a *tests/testthat/test_ids.R
 422ed5acfbf0f35bb709cab4863c81f5 *tests/testthat/test_keep_in_bounds.R
 e7cf018b612e7fa875b7e00e9e080bc7 *tests/testthat/test_leanify.R
 239591a552620b8ff5812d89e2444fd0 *tests/testthat/test_load_data.R
-095b6a631b0be7bf807fa793d8bcded6 *tests/testthat/test_map.R
+33d02a4cd3e945117f8a6cada7a6be7d *tests/testthat/test_map.R
 7b576b13c646efc0688ff90cb4350d81 *tests/testthat/test_map_values.R
 5de69c16284fffc35602c60c1ffe16b6 *tests/testthat/test_modify.R
 67b2782bcafb774986fafcdb91f1fb08 *tests/testthat/test_named_list.R
@@ -166,6 +170,7 @@ e7cf018b612e7fa875b7e00e9e080bc7 *tests/testthat/test_leanify.R
 5d6d495228ecf16c83e527766dc0e32a *tests/testthat/test_nin.R
 71c91fb5489d97135fd6f83b4de0c227 *tests/testthat/test_printf.R
 d5bb86d3ac0e65105f022ffdfa38edb9 *tests/testthat/test_rcbind.R
+30bfa353e56a4f1bec5540429d0ffd63 *tests/testthat/test_recycle_vectors.R
 3e9afbaeb534dec176d7d2896e727bfe *tests/testthat/test_reorder_vector.R
 d1bd9bed25666eaea6c8c1f0bf4bb7ab *tests/testthat/test_require_namespaces.R
 1ea87b5d4a1de7130f5896b4d0602d38 *tests/testthat/test_rowwise_table.R

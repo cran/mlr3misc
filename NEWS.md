@@ -1,3 +1,10 @@
+# mlr3misc 0.13.0
+
+* Updated default environment for `crate()` to `topenv()` (#86).
+* Added safe methods for dictionary retrieval (#83)
+* fix: Fixed an important bug that caused serialized objects to be overly large
+  when installing mlr3 with `--with-keep.source` (#88)
+
 # mlr3misc 0.12.0
 
 * Added new encapsulation mode `"try"`.

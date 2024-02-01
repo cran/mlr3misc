@@ -1,6 +1,6 @@
 Package: mlr3misc
 Title: Helper Functions for 'mlr3'
-Version: 0.13.0
+Version: 0.14.0
 Authors@R: c(
     person("Michel", "Lang", , "michellang@gmail.com", role = c("cre", "aut"),
            comment = c(ORCID = "0000-0001-9754-0393")),
@@ -23,7 +23,7 @@ Config/testthat/edition: 3
 Config/testthat/parallel: true
 Encoding: UTF-8
 NeedsCompilation: yes
-RoxygenNote: 7.2.3
+RoxygenNote: 7.2.3.9000
 Collate: 'Dictionary.R' 'named_list.R' 'Callback.R' 'Context.R'
         'as_factor.R' 'as_short_string.R' 'assert_ro_binding.R'
         'calculate_hash.R' 'capitalize.R' 'catn.R'
@@ -43,9 +43,9 @@ Collate: 'Dictionary.R' 'named_list.R' 'Callback.R' 'Context.R'
         'str_collapse.R' 'str_indent.R' 'str_trunc.R' 'to_decimal.R'
         'topo_sort.R' 'transpose.R' 'unnest.R' 'which_max.R'
         'with_package.R' 'zzz.R'
-Packaged: 2023-09-20 09:02:40 UTC; michel
+Packaged: 2024-02-01 09:33:39 UTC; marc
 Author: Michel Lang [cre, aut] (<https://orcid.org/0000-0001-9754-0393>),
   Patrick Schratz [aut] (<https://orcid.org/0000-0003-0748-6624>)
 Maintainer: Michel Lang <michellang@gmail.com>
 Repository: CRAN
-Date/Publication: 2023-09-20 09:30:03 UTC
+Date/Publication: 2024-02-01 10:10:02 UTC

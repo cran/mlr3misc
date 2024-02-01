@@ -1,3 +1,11 @@
+# mlr3misc 0.14.0
+
+* Added argument `.compile` to function `crate()` because R disables byte-code
+compilation of functions when changing their enclosing environment
+* Added the possibility to include prototype arguments when adding elements to a `Dictionary`
+* Removed unused argument `required_args` from `Dictionary` class
+* Disable leanification when `ROXYGEN_PKG` environment variable is set
+
 # mlr3misc 0.13.0
 
 * Updated default environment for `crate()` to `topenv()` (#86).

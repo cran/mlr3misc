@@ -1,6 +1,6 @@
-5c1df0b2440830237be9b9a55994dadc *DESCRIPTION
-2a5230c98cf7f12593370bb5738e7185 *NAMESPACE
-dafe5cf4d484c3c61dea4d3c8fe60c9b *NEWS.md
+9e17ffbe67d2ab8c2719e140da6fe4ef *DESCRIPTION
+cc881f5d2d8b135d4869e60a106fa75d *NAMESPACE
+7efb7c16dbc1eaaab8ba8b428e4d058e *NEWS.md
 409c62c32a3db8118abdfb1ff2f071be *R/Callback.R
 6dee11e49efd5c5bd18bcf239c81cd0d *R/Context.R
 dfcecc5fb3f5d4163600957b33262371 *R/Dictionary.R
@@ -21,7 +21,7 @@ c54262fc555c0232f54368a1b6c19c45 *R/dictionary_sugar.R
 fb0db6a684dc3f82387b5cdc906f0ff2 *R/dictionary_sugar_safe.R
 b10c04da04ae2feb7e22aacffb347311 *R/did_you_mean.R
 1853c066eb3883126ec6db4f86562c91 *R/distinct_values.R
-bc6587e868722c12b7b09874e676536f *R/encapsulate.R
+f9e1a712d325267c9f2be78a8d55b4df *R/encapsulate.R
 2dfb88744df94ffc355d13748dfe32e3 *R/enframe.R
 6b3b083aecc14ac134cf0bc408073bd8 *R/extract_vars.R
 a1159802c259d57ca347b833bd11db4a *R/format_bib.R
@@ -62,6 +62,7 @@ efe79afffa095431a487807f3ee0c849 *R/shuffle.R
 439ef647de33f1881d6ebd6dfed0b426 *R/str_collapse.R
 487d401df5b2a18a5e48c86226e17107 *R/str_indent.R
 5dbf32e69a32647cf1a7754dac4b7fbd *R/str_trunc.R
+3670c1749d6b75651bc8d3b277493e15 *R/strip_srcrefs.R
 632ec19a44186e809c68ca5fd8e60716 *R/to_decimal.R
 2df51b17e6ee5a0c001293bd81ef7646 *R/topo_sort.R
 3230f8473d646f86eea8f5a712177611 *R/transpose.R
@@ -141,6 +142,7 @@ b6cb28c3324526c453743315bfedd337 *man/shuffle.Rd
 a06bbbe7a784535cfdfd3efa909fbc97 *man/str_collapse.Rd
 a36b9293a22f658aeef2cc06dd4a09d9 *man/str_indent.Rd
 9c73bd289bd8ef258792d40b958aec44 *man/str_trunc.Rd
+97034c07e844365d39fd381d20d7d676 *man/strip_srcrefs.Rd
 70b1e56cbce4672289ab344787927816 *man/to_decimal.Rd
 f30fa56c2067122c83cbbe6f88012990 *man/topo_sort.Rd
 a8c3bdeba738138a165e297cfefdf113 *man/transpose_list.Rd
@@ -169,7 +171,7 @@ b6ba0f187457cdd90f0710bd54439256 *tests/testthat/test_chunk.R
 b7366b0742d5aa6394fbeeee2c391540 *tests/testthat/test_crate.R
 1044966d1bc36bd4ee4d358ced40fc87 *tests/testthat/test_cross_join.R
 00572844bd4cfb332af72ef214d84182 *tests/testthat/test_distinct_values.R
-f5aacbe08db8ad44682235b50e7de646 *tests/testthat/test_encapsulate.R
+68d5970edf27cb455072f2117ed9d2d9 *tests/testthat/test_encapsulate.R
 692bdab3b85aaba3a8e5920b33ad4c1c *tests/testthat/test_extract_vars.R
 68ebe67c44cf09c625e26156fc13b035 *tests/testthat/test_format_bib.R
 b3df56dce2250298866ece91a3233ff5 *tests/testthat/test_formulate.R
@@ -202,6 +204,7 @@ f45e30e26968bdc208703d4ebd73d59d *tests/testthat/test_set_params.R
 68b329da9893e34099c7d8ad5cb9c940 *tests/testthat/test_set_pars.R
 9dc892bccb33ecf5100a0e3da1819842 *tests/testthat/test_shuffle.R
 cc165b723006a6ad33e863489fdd94c6 *tests/testthat/test_str_trunc.R
+c86e6188d2dbefffd917ce26fb38307a *tests/testthat/test_strip_srcrefs.R
 b5172af67801e3e111eff2fa8f23f237 *tests/testthat/test_to_decimal.R
 40d16e0b431cac8225f8c0f61a730dfc *tests/testthat/test_topo_sort.R
 bc9494d06094b337d7fb861d6766a11b *tests/testthat/test_transpose.R

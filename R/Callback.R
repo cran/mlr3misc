@@ -138,6 +138,12 @@ as_callbacks = function(x, clone = FALSE, ...) { # nolint
 
 #' @rdname as_callback
 #' @export
+as_callbacks.NULL = function(x, ...) { # nolint
+  list()
+}
+
+#' @rdname as_callback
+#' @export
 as_callbacks.list = function(x, clone = FALSE, ...) { # nolint
   lapply(x, as_callback, clone = clone, ...)
 }
@@ -218,10 +224,13 @@ clbks = function(.keys) {
 #' Assertions for [Callback] class.
 #'
 #' @param callback ([Callback]).
+#' @param null_ok (`logical(1)`)\cr
+#'   If `TRUE`, `NULL` is allowed.
 #'
 #' @return [Callback] | List of [Callback]s.
 #' @export
-assert_callback = function(callback) {
+assert_callback = function(callback, null_ok = FALSE) {
+  if (null_ok && is.null(callback)) return(invisible(NULL))
   assert_class(callback, "Callback")
   invisible(callback)
 }
@@ -230,6 +239,5 @@ assert_callback = function(callback) {
 #' @param callbacks (list of [Callback]).
 #' @rdname assert_callback
 assert_callbacks = function(callbacks) {
-  assert_list(callbacks)
-  if (length(callbacks)) invisible(lapply(callbacks, assert_callback)) else invisible(NULL)
+  invisible(lapply(callbacks, assert_callback))
 }

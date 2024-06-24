@@ -5,12 +5,15 @@
 \alias{assert_callbacks}
 \title{Assertions for Callbacks}
 \usage{
-assert_callback(callback)
+assert_callback(callback, null_ok = FALSE)
 
 assert_callbacks(callbacks)
 }
 \arguments{
 \item{callback}{(\link{Callback}).}
+
+\item{null_ok}{(\code{logical(1)})\cr
+If \code{TRUE}, \code{NULL} is allowed.}
 
 \item{callbacks}{(list of \link{Callback}).}
 }

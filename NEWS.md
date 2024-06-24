@@ -1,3 +1,7 @@
+# mlr3misc 0.15.1
+
+* refactor: Update `as_callback()` functions.
+
 # mlr3misc 0.15.0
 
 * Feat: Added `strip_screfs` S3 generic, which removes source references from objects

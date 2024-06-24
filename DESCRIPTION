@@ -1,6 +1,6 @@
 Package: mlr3misc
 Title: Helper Functions for 'mlr3'
-Version: 0.15.0
+Version: 0.15.1
 Authors@R: c(
     person("Michel", "Lang", , "michellang@gmail.com", role = c("cre", "aut"),
            comment = c(ORCID = "0000-0001-9754-0393")),
@@ -43,9 +43,9 @@ Collate: 'Dictionary.R' 'named_list.R' 'Callback.R' 'Context.R'
         'str_collapse.R' 'str_indent.R' 'str_trunc.R' 'strip_srcrefs.R'
         'to_decimal.R' 'topo_sort.R' 'transpose.R' 'unnest.R'
         'which_max.R' 'with_package.R' 'zzz.R'
-Packaged: 2024-04-10 13:38:11 UTC; marc
+Packaged: 2024-06-24 19:04:08 UTC; marc
 Author: Michel Lang [cre, aut] (<https://orcid.org/0000-0001-9754-0393>),
   Patrick Schratz [aut] (<https://orcid.org/0000-0003-0748-6624>)
 Maintainer: Michel Lang <michellang@gmail.com>
 Repository: CRAN
-Date/Publication: 2024-04-10 16:30:02 UTC
+Date/Publication: 2024-06-24 21:00:01 UTC

@@ -1,7 +1,7 @@
-8833c4dd8497f6413a8de25d75149f39 *DESCRIPTION
+648100fb84a6bce34962ea8a88941e74 *DESCRIPTION
 ce0c8f406937ed2d2e3761895d74d55c *NAMESPACE
-a8a6713c6b2e7d2f84944b8f9c26033b *NEWS.md
-3129d2d78654a3d808be46ce4d864295 *R/Callback.R
+197d17939ac4e5da9ea447c5c418e6b3 *NEWS.md
+441efdeadc682f694b355f718dc2ff99 *R/Callback.R
 6dee11e49efd5c5bd18bcf239c81cd0d *R/Context.R
 9c22bc64d65baef554f6935dd78e567e *R/Dictionary.R
 62bb6f78b74382f76a4ab5afeafdc8e6 *R/as_factor.R
@@ -22,7 +22,7 @@ f5fa0bbd7ccb2f2fd4887352e6eb49a6 *R/cross_join.R
 c9cab250b823629bb448843ec47b11b2 *R/dictionary_sugar.R
 3c898a850324a42497c76fc83b8fc430 *R/did_you_mean.R
 1853c066eb3883126ec6db4f86562c91 *R/distinct_values.R
-f9e1a712d325267c9f2be78a8d55b4df *R/encapsulate.R
+e5730393bdedd30983df043fad5770e8 *R/encapsulate.R
 2dfb88744df94ffc355d13748dfe32e3 *R/enframe.R
 6b3b083aecc14ac134cf0bc408073bd8 *R/extract_vars.R
 40b04b882ad89c74a3264e5202d20292 *R/format_bib.R
@@ -99,7 +99,7 @@ a90bfa642239e55b32275ce5f4ba324e *man/count_missing.Rd
 6761a8dba9aa9b408246461b1c97fdf2 *man/dictionary_sugar_inc_get.Rd
 2d0fe5c4d037b123ce92a7ccc142434e *man/did_you_mean.Rd
 32676faf0159b7a32d84c6f6bf3caffa *man/distinct_values.Rd
-5f389fc7069e7e999ab9a19b5038e9cd *man/encapsulate.Rd
+1e7046c488e4c12a6bbaff9135fa616c *man/encapsulate.Rd
 98291e06e5110578f2d99456855a19ba *man/enframe.Rd
 60734ce0e6b17e809e7ecb0a84689704 *man/extract_vars.Rd
 82e14b4c5103f6c7c22afbdb75cb5dfc *man/figures/logo.png
@@ -173,7 +173,7 @@ b6ba0f187457cdd90f0710bd54439256 *tests/testthat/test_chunk.R
 b7366b0742d5aa6394fbeeee2c391540 *tests/testthat/test_crate.R
 1044966d1bc36bd4ee4d358ced40fc87 *tests/testthat/test_cross_join.R
 00572844bd4cfb332af72ef214d84182 *tests/testthat/test_distinct_values.R
-7124753a6a0025218f496809801faba1 *tests/testthat/test_encapsulate.R
+0f56d749027e9d59e6b039e7e913be1d *tests/testthat/test_encapsulate.R
 692bdab3b85aaba3a8e5920b33ad4c1c *tests/testthat/test_extract_vars.R
 68ebe67c44cf09c625e26156fc13b035 *tests/testthat/test_format_bib.R
 b3df56dce2250298866ece91a3233ff5 *tests/testthat/test_formulate.R
